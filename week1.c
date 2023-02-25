@@ -4,6 +4,6 @@
 int main() {
     string name = get_string ("Enter your name: ");
     string age = get_string ("Enter your age: ");
-    string phone = get_string ("Enter your phone number: ");
-    printf ("%s%s%s", name, age, phone);
+    int phone = get_int ("Enter your phone number: ");
+    printf ("%s\n%s\n%d\n", name, age, phone);
 }
