@@ -2,13 +2,8 @@
 #include <cs50.h>
 
 int main() {
-    
-    string name, age, phone;
-    printf ("Enter your name: ");
-    name = scanf ("%s", &name);
-    printf ("Enter your age: ");
-    name = scanf ("%s", &age);
-    printf ("Enter your phone number: ");
-    name = scanf ("%s", &phone);
-    printf ("%s%s%s", name, age, phone)
+    string name = get_string ("Enter your name: ");
+    string age = get_string ("Enter your age: ");
+    string phone = get_string ("Enter your phone number: ");
+    printf ("%s%s%s", name, age, phone);
 }
