@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdin.h>
 
 int main() {
     string name, age, phone;
