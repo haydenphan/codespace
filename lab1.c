@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main() {
-	int start, end;
-	int year=0;
-	printf ("Nhap so llamas ban dau: ");
+	unsigned int start, end;
+	unsigned int year=0;
+	printf ("Start: ");
 	scanf ("%d", &start);
 	printf ("Goal number: ");
 	do {
@@ -15,4 +15,4 @@ int main() {
 		year++;
 	}
 	printf ("%d", year);
-} 
+}
