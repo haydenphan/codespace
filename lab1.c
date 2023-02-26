@@ -14,5 +14,5 @@ int main() {
 		start += (start/12);
 		year++;
 	}
-	printf ("Years: %d", year\n);
+	printf ("Years: %d\n", year);
 }
