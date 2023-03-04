@@ -6,9 +6,9 @@ int main() {
     char j = 'a';
     for (i=0; i<26; i++) {
 			s[i] = j;
+            printf ("%c ", s[i]);
             j++;
 	    }
     }
-	printf ("%s ", s);
     return 0;
 }
