@@ -6,8 +6,9 @@ int main() {
 	char i;
 	for (i=0 ; i<26; i++) {
 		n = i;
-		for (s[i]='a'; s[i]<s[n]; s[i]++) {
-			s[n] = s[i];
+        int j;
+		for (j='a'; j<'z'; j++) {
+			s[n] = s[j];
 		}
 	}
 	printf ("%c ", s[n]);
