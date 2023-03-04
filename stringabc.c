@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
+    char s[26];
     int i;
-	char s[26];
     char j = 'a';
     for (i=0; i<26; i++) {
 			s[i] = j;
