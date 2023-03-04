@@ -9,7 +9,6 @@ int main() {
 			s[i] = j;
 	    }
     }
-    s[25] = '\0';
 	printf ("%s ", s);
     return 0;
 }
