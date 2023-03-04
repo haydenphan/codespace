@@ -1,13 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int ;
-	char s[];
-
-        int j;
-		for (j='a'; j<'z'; j++) {
-			s[n] = s[j];
-		}
+	char s[26];
+    char j;
+	for (j='a'; j<'z'; j++) {
+			s[26] = j;
 	}
-	printf ("%c ", s[n]);
+	}
+	printf ("%c ", s[26]);
 }
