@@ -6,7 +6,7 @@ int main() {
     char s[100];
     scanf ("%s", s);
     int i;
-    for (i=0; i<strlen(s); i++) {
+    for (i=0; i<strlen(s); i++) {        // co the dung thu vien ctype.h 
         if (s[i]>='a' && s[i]<='z') {
             printf ("%c", s[i]-32);
         } else {
