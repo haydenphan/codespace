@@ -10,6 +10,6 @@ int main() {
 	    }
     }
     s[25] = '\0';
-	printf ("%c ", s[10]);
+	printf ("%s ", s);
     return 0;
 }
