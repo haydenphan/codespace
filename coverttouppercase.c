@@ -8,9 +8,9 @@ int main() {
     int i;
     for (i=0; i<strlen(s); i++) {
         if (s[i]>='a' && s[i]<='z') {
-            printf ("%s", s[i]-32);
+            printf ("%c", s[i]-32);
         } else {
-            printf ("%s", s[i]);
+            printf ("%c", s[i]);
         }
     }
     printf ("\n");
