@@ -8,7 +8,7 @@ int main() {
 			s[i] = j;
             printf ("%c ", s[i]);
             j++;
-	    }
-    }
+	}
+    printf ("\n");
     return 0;
 }
