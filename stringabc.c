@@ -4,8 +4,8 @@ int main() {
     int i;
 	char s[26];
     char j;
-    for (i=0; i<26; i++) {
-        for (j='a'; j<='z'; j++) {
+    for (j='a'; j<='z'; j++) {
+        for (i=0; i<26; i++) {
 			s[i] = j;
 	    }
     }
