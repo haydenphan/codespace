@@ -16,6 +16,10 @@ int main() {
     printf ("Nhap vao do dai 3 canh cua tam giac can kiem tra: ");
     scanf ("%lf%lf%lf", &a, &b, &c);
     bool n = valid_triangle(a, b, c);
-    return n;
+    if (n == true) {
+        printf ("True");
+    } else {
+        printf ("False");
+    }
 }
 
