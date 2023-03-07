@@ -1,8 +1,12 @@
 #include <stdio.h>
 
+int T(int* p, int* q) {
+    int t = *p;
+    *p = *q;
+    *q = t;
+}
 int main() {
-    int n=260, *p=&n;
-    printf ("n=%d\n", n);
-    int *pp=0;
-    printf ("n=%d\n", n);
+    int a=7, b=6, c=5;
+    int L= t(b, a, c);
+    printf("%d\n", L);
 }
