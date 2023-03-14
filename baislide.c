@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 int linearsearch (int a[10], int b) {
-    int i;
+    int i, kq;
     for (i=0; i<10; i++) {
         if (a[i]==b) {
-            return i;
+            kq = i;
         } else {
-            return -1;
+            kq = -1;
         }
     }
+    return kq;
 }
 
 int main() {
@@ -21,7 +22,7 @@ int main() {
     printf ("Nhap so can tim trong mang: ");
     int b;
     scanf ("%d", &b);
-    int x = linearsearch (a[n], b);
+    int x = linearsearch (a[10], b);
     if (x != -1) {
         printf ("Co");
     } else {
