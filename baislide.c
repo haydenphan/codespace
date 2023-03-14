@@ -1,5 +1,15 @@
 #include <stdio.h>
-int linearsearch (int a[10],int b);
+
+int linearsearch (int a[10], int b) {
+    int i;
+    for (i=0; i<10; i++) {
+        if (a[i]==b) {
+            return i;
+        } else {
+            return -1;
+        }
+    }
+}
 
 int main() {
     int n=10;
@@ -20,12 +30,3 @@ int main() {
     return 0;
 }
 
-int linearsearch (int a[n], int b) {
-    for (i=0; i<n; i++) {
-        if (a[i]==b) {
-            return i;
-        } else {
-            return -1;
-        }
-    }
-}
