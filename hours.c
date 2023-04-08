@@ -17,6 +17,11 @@ int total (int* b, int m) {
 }
 
 int main() {
-    int 
+    int num;
     printf ("Number of weeks taking CS50: ");
+    scanf ("%d", &num);
+    switch (num) {
+        case 1:
+           
+    }
 }
