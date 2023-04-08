@@ -22,6 +22,7 @@ int main() {
     scanf ("%d", &num);
     switch (num) {
         case 1:
-           
+           printf ("Week 0 HW Hours: );
+           scanf
     }
 }
