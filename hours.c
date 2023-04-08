@@ -17,12 +17,14 @@ int total (int* b, int m) {
 }
 
 int main() {
-    int num;
+    int n;
     printf ("Number of weeks taking CS50: ");
-    scanf ("%d", &num);
-    switch (num) {
-        case 1:
-           printf ("Week 0 HW Hours: );
-           scanf
+    scanf ("%d", &n);
+    int a[n];
+           int i;
+           for (i=0; i<n; i++) {
+             printf ("Week %d HW Hours: ", i);
+             scanf ("%d", a[i]);
+           }
     }
 }
