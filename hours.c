@@ -17,7 +17,8 @@ int total (int* b, int m) {
 }
 
 int main() {
-    int i, n;
+    int i, n, t;
+    double m;
     char option;
     printf ("Number of weeks taking CS50: ");
     scanf ("%d", &n);
@@ -30,10 +31,10 @@ int main() {
     scanf ("%c", &option);
     switch (option) {
         case 'T':
-           int t = total (&a, n);
+           t = total (&a, n);
            printf ("%d hours", t);
         case 'A':
-           double m = avr (&a, n);
+           m = avr (&a, n);
            printf ("%.1lf hours", m);
     }
     return 0;
