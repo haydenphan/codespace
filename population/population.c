@@ -14,8 +14,10 @@ int main(void)
         m = get_int ("End size: ");
     } while (m<1)
     // TODO: Calculate number of years until we reach threshold
-    for (int i=0; i<;i++) {
-        
+    int year = -1;
+    for (int i=n; i<=m; i*= 13/12) {
+        year++;
     }
     // TODO: Print number of years
+    
 }
