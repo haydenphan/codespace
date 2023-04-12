@@ -7,7 +7,7 @@ int main(void)
     int n;
     do {
         n = get_int("Start size: ");
-    } while (n < 1);
+    } while (n < 9);
 
     // Prompt for end size
     int m;
