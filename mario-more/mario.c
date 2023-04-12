@@ -13,8 +13,9 @@ int main(void)
         {
            char k = '#';
            char p = '#';
-           printf ("         %c",k++);
+           printf ("%c",k++);
         }
+        printf ("         ");
         printf ("\n");
     }
     return 0;
