@@ -15,10 +15,20 @@ int main(void)
            char p = '#';
            printf ("%c",k++);
            */
-      for (int n=height-1; n>=0)
+      for (int n=height-1; n>=0; n--)
+      {
+        char b = ' ';
+        printf ("%c", b);
+        for (int m=1; m<=height; m++)
+        {
+          char p = '#';
+          printf ("%c", p++);
+        }
+        printf ("\n");
+      }
 
 
         printf ("\n");
-    }
+    
     return 0;
 }
