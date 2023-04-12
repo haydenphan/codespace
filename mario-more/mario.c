@@ -18,8 +18,10 @@ int main(void)
 
           for (int j=height-1; j>=0; j--) {
             char a = ' ';
-            char 
+            printf ("%c", a--);
           }
+            char b = '#';
+            printf ("%c", b++);
 
         }
         printf ("\n");
