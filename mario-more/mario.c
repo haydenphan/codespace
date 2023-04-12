@@ -9,14 +9,18 @@ int main(void)
     } while (height<1);
     for (int i=1; i<=height; i++)
     {
-        for (int j=height; j>=1; j--)
-        {  /*
+       /* for (int j=height; j>=1; j--)
+        {
            char k = '#';
            char p = '#';
            printf ("%c",k++);
            */
-          char p = '#';
-          printf ("%c",p++);
+
+          for (int j=height-1; j>=0; j--) {
+            char a = ' ';
+            char 
+          }
+
         }
         printf ("\n");
     }
