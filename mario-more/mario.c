@@ -11,10 +11,10 @@ int main(void)
     {
         for (int j=1; j<=i; j++)
         {
-            
+           char k = '#';
+           printf ("%c\n",k);
         }
-        char j = '#';
-        printf ("%c  %c\n", j,j);
+
     }
     return 0;
 }
