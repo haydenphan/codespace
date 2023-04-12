@@ -12,9 +12,10 @@ int main(void)
         for (int j=1; j<=i; j++)
         {
            char k = '#';
-           printf ("%c",k++);
+           char p = '#';
+           printf ("%c  %c",k++, p++);
         }
-
+        printf ("\n");
     }
     return 0;
 }
