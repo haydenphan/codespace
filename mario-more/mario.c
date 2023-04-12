@@ -15,7 +15,7 @@ int main(void)
            char p = '#';
            printf ("%c",k++);
            */
-      
+      for (int n=height-1; n>=0)
 
 
         printf ("\n");
