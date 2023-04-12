@@ -23,7 +23,7 @@ int main(void)
             char b = '#';
             printf ("%c", b++);
 
-        }
+        
         printf ("\n");
     }
     return 0;
