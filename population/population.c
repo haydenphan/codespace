@@ -14,19 +14,15 @@ int main(void)
 	} while (m<1 || m<=n);
 
     // Calculate the number of years to reach the desired ending population
-    int new_llamas;
-    int llamas_passed_away;
-    int years = 0;
+    int year = 0;
     while (n < m)
     {
-        new_llamas = start_size / 3;
-        llamas_passed_away = start_size / 4;
-        start_size = start_size + new_llamas - llamas_passed_away;
-        years++;
+        n *= 13/12;
+        year++;
     }
 
     // Print the number of years to reach the desired ending population
-    printf("Years: %d\n", years);
+    printf("Years: %d\n", year);
 
     return 0;
 }
