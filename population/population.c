@@ -1,28 +1,33 @@
-#include <cs50.h>
 #include <stdio.h>
 
-int main(void)
+int population (int a, int b) {
+	int year = 0;
+	int s = a;
+	if (a==b) {
+		return 0;
+	}
+	while (a<b) {
+		a = a * 13/12;
+		year++;
+	}
+	return year;
+}
+
+int main()
 {
-    // Prompt for start size
-     do {
-    	int n = get_int("Start size: ");
+    int n,m;
+    do {
+    	printf ("Start size: ");
+    	scanf ("%d", &n);
     } while (n<1);
 
-    // Prompt for end size
     do {
-    	 int m = get_int("End size: ");
+    	printf ("End size: ");
+    	scanf ("%d", &m);
 	} while (m<1 || m<=n);
 
-    // Calculate the number of years to reach the desired ending population
-    int year = 0;
-    while (n < m)
-    {
-        n += n / 3 - n / 4;
-        year++;
-    }
-
-    // Print the number of years to reach the desired ending population
-    printf("Years: %d\n", year);
-
+	int kq = population (n,m);
+    printf ("Years: %d", kq);
     return 0;
 }
+
