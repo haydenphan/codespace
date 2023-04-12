@@ -3,21 +3,30 @@
 
 int main(void)
 {
-    // TODO: Prompt for start size
-    int n,m;
-    do {
-        n = get_int ("Start size: ");
+    // Prompt for start size
+     do {
+    	int n = get_int("Start size: ");
     } while (n<1);
 
-    // TODO: Prompt for end size
+    // Prompt for end size
     do {
-        m = get_int ("End size: ");
-    } while (m<1);
-    // TODO: Calculate number of years until we reach threshold
-    int year = -1;
-    for (int i=n; i<=m; i*= 13/12) {
-        year++;
+    	 int m = get_int("End size: ");
+	} while (m<1 || m<=n);
+
+    // Calculate the number of years to reach the desired ending population
+    int new_llamas;
+    int llamas_passed_away;
+    int years = 0;
+    while (n < m)
+    {
+        new_llamas = start_size / 3;
+        llamas_passed_away = start_size / 4;
+        start_size = start_size + new_llamas - llamas_passed_away;
+        years++;
     }
-    // TODO: Print number of years
-    printf ("Years: %d", year);
+
+    // Print the number of years to reach the desired ending population
+    printf("Years: %d\n", years);
+
+    return 0;
 }
