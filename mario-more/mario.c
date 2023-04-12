@@ -9,7 +9,7 @@ int main(void)
     } while (height<1);
     for (int i=1; i<=height; i++)
     {
-        for (int j=i; j>=1; j--)
+        for (int j=height; j>=1; j--)
         {  /*
            char k = '#';
            char p = '#';
