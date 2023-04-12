@@ -13,7 +13,7 @@ int main(void)
         {
            char k = '#';
            char p = '#';
-           printf ("%c  %c",k++, p++);
+           printf ("         %c",k++);
         }
         printf ("\n");
     }
