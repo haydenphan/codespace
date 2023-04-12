@@ -17,7 +17,7 @@ int main(void)
     int year = 0;
     while (n < m)
     {
-        n *= 13/12;
+        n += n / 3 - n / 4;
         year++;
     }
 
