@@ -15,7 +15,10 @@ int main(void)
            char p = '#';
            printf ("%c",k++);
            */
+          for (int )
+          char m = '';
           char p = '#';
+          printf ("%c",m--);
           printf ("%c",p++);
         }
         printf ("\n");
