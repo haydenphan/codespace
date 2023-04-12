@@ -9,6 +9,7 @@ int main(void)
     } while (height<1);
     for (int i=1; i<=height; i++)
     {
+        for (int j=)
         char j = '#';
         printf ("%c  %c\n", j,j);
     }
