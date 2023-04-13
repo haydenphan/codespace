@@ -143,7 +143,7 @@ int checkcheck (char a[])
 int main(void)
 {
     char a[16];
-    int p, n = strlen(a);
+    int p;
 
     // Prompt the users input numbers to check
     do
@@ -151,10 +151,9 @@ int main(void)
         printf ("Number: ");
         scanf ("%s", a);
         p = checkcheck (a);
-        printf ("%d", p);
-    } while (p == 0 || n < 13 || n > 16);
+    } while (p == 0);
 
-    if (n == 15)
+    if (strlen(a) == 15)
     {
         if (amex(a) == 1)
         {
@@ -165,7 +164,7 @@ int main(void)
             printf ("INVALID\n");
         }
     }
-    else if (n == 13)
+    else if (strlen(a) == 13)
     {
         if (visa(a) == 1)
         {
@@ -176,7 +175,7 @@ int main(void)
             printf ("INVALID\n");
         }
     }
-    else if (n == 16)
+    else if (strlen(a) == 16)
     {
         if (mastercard(a) == 1)
         {
@@ -190,6 +189,10 @@ int main(void)
         {
             printf ("INVALID");
         }
+    }
+    else
+    {
+        printf ("INVALID\n");
     }
     return 0;
 }
