@@ -6,12 +6,13 @@ int check (string a[])
 {
     int n = strlen (a);
     string b[n/2];
-    string c[n-n/2]
+    string c[n-n/2];
     if (n % 2 == 0)
     {
-        for (int i=0, int j=0; i<n, j<n/2; i+=2, j++)
+        for (int i=0, int j=0, int k=0; i<n, j<n/2, k<n-n/2; i+=2, j++, k++)
         {
             b[j] = a[i] * 2;
+            c[k] = a[i+1];
         }
     }
     else
