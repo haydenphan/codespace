@@ -9,6 +9,13 @@ int check (char a[])
     string c[n-n/2];
     if (n % 2 == 0)
     {
+        for (int i=0; i<n; i+=2)
+        {
+            for (int j=0; j<n/2; j++)
+            {
+                b[j] = a[i] * 2;
+            }
+        }
         for (int i=0, int j=0, int k=0; i<n, j<n/2, k<n-n/2; i+=2, j++, k++)
         {
             b[j] = a[i] * 2;
