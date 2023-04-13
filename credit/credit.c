@@ -88,9 +88,9 @@ int amex (char a[])
 
 int mastercard (char a[])
 {
-    if (a[0] != '5' || a[1] < 1 || a[1] > 5)
+    if (a[0] == '5' && a[1] >= 1 && a[1] <= 5)
     {
-        return 0;
+        return 1;
     }
     else
     {
@@ -102,7 +102,7 @@ int mastercard (char a[])
         {
             return 0;
         } */
-        return 1;
+        return 0;
     }
 }
 
