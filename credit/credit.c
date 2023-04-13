@@ -181,13 +181,19 @@ int main(void)
     }
     else if (strlen(a) == 16)
     {
-        if (mastercard(a) == 1)
+        if (a[0] == 5)
         {
-            printf ("MASTERCARD\n");
+            if (mastercard(a) == 1)
+            {
+                printf ("MASTERCARD\n");
+            }
         }
-        else if (visa(a) == 1)
+        else
         {
-            printf ("VISA\n");
+            if (visa(a) == 1)
+            {
+                printf ("VISA\n");
+            }
         }
         else
         {
