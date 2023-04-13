@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int check (string a[])
+int check (char a[])
 {
     int n = strlen (a);
     string b[n/2];
