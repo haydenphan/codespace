@@ -94,14 +94,15 @@ int mastercard (char a[])
     }
     else
     {
-        if (check(a) == 1)
+        /*if (check(a) == 1)
         {
             return 1;
         }
         else
         {
             return 0;
-        }
+        } */
+        return 1;
     }
 }
 
@@ -113,14 +114,15 @@ int visa (char a[])
     }
     else
     {
-        if (check(a) == 1)
+        /*if (check(a) == 1)
         {
             return 1;
         }
         else
         {
             return 0;
-        }
+        } */
+        return 1;
     }
 }
 
