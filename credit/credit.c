@@ -121,11 +121,11 @@ int checkcheck (char a[])
     {
         if (a[i] <= '0' || a[i] >= '9')
         {
-            flag = i;
+            flag = 0;
             break;
         }
         else {
-            flag = -1;
+            flag = 1;
         }
     }
     return flag;
@@ -134,7 +134,7 @@ int checkcheck (char a[])
 int main(void)
 {
     char a[16];
-    int p;
+    int p, n = strlen(a);
 
     // Prompt the users input numbers to check
     do
@@ -142,20 +142,44 @@ int main(void)
         printf ("Number: ");
         scanf ("%s", a);
         p = checkcheck (a);
-        if (p != -1)
-        {
-            a[p] = 0;
-        }
-    } while (a[p] == 0 || strlen(a) < 13 || strlen(a) > 16);
+    } while (p == 0 || n < 13 || n > 16);
 
-    int kq = check (a);
-    if (kq == 1)
+    if (n == 15)
     {
-        printf ("VISA\n");
+        if (amex(a) == 1)
+        {
+            printf ("AMEX\n");
+        }
+        else
+        {
+            printf ("INVALID\n");
+        }
     }
-    else
+    else if (n == 13)
     {
-        printf ("INVALID\n");
+        if (visa(a) == 1)
+        {
+            printf ("VISA\n");
+        }
+        else
+        {
+            printf ("INVALID\n");
+        }
+    }
+    else if (n == 16)
+    {
+        if (mastercard(a) == 1)
+        {
+            printf ("MASTERCARD\n");
+        }
+        else if (visa(a) == 1)
+        {
+            printf ("VISA\n");
+        }
+        else
+        {
+            printf ("INVALID");
+        }
     }
     return 0;
 }
