@@ -92,7 +92,7 @@ int main(void)
     do
     {
         printf ("Number: ");
-        scanf ("%[0-9]", a);
+        scanf ("%s", a);
         p = checkcheck (a);
         if (p != -1)
         {
