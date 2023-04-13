@@ -33,7 +33,7 @@ int calculate_quarters(int cents)
 int calculate_dimes(int cents)
 {
     int count = 0;
-    cents = calculate_quarters(cents);
+    cents = cents - 25 * calculate_quarters(cents);
     if (cents < 10)
     {
         return 0;
