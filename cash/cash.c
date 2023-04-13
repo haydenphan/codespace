@@ -33,6 +33,7 @@ int calculate_quarters(int cents)
 int calculate_dimes(int cents)
 {
     int count = 0;
+    cents = calculate_quarters(cents);
     if (cents < 10)
     {
         return 0;
@@ -53,6 +54,7 @@ int calculate_dimes(int cents)
 int calculate_nickels(int cents)
 {
     int count = 0;
+    cents = calculate_dimes(cents);
     if (cents < 5)
     {
         return 0;
@@ -73,6 +75,7 @@ int calculate_nickels(int cents)
 int calculate_pennies(int cents)
 {
     int count;
+    cents = calculate_nickels(cents);
     if (cents == 1)
     {
         count = 1;
