@@ -87,7 +87,7 @@ int checkcheck (char a[])
 
 int main(void)
 {
-    char a[20];
+    char a[16];
     int p;
     do
     {
@@ -98,7 +98,7 @@ int main(void)
         {
             a[p] = 0;
         }
-    } while (a[p] == 0);
+    } while (a[p] == 0 || strlen(a) < 13 || strlen(a) > 16);
 printf ("%s\n", a);
     int kq = check (a);
     if (kq == 1)
