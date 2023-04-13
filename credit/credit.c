@@ -68,8 +68,14 @@ int amex (char a[])
         {
             return 1;
         }
+        else
+        {
+            return 0;
+        }
     }
 }
+
+
 
 // Check whether the inputted string is number character string or not
 int checkcheck (char a[])
