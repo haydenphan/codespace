@@ -101,7 +101,7 @@ int main(void)
    int c = calculate_nickels(cents);
    int d = calculate_pennies(cents);
 
-   printf ("%d\n", a);
+   printf ("%d\n%d\n%d\n%d\n", a, b, c, d);
 
    // Print total number of coins to give the customer
    printf ("%d\n", calcute_total (a, b, c, d));
