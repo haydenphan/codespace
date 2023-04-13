@@ -5,8 +5,8 @@
 int check (char a[])
 {
     int n = strlen (a);
-    string b[n/2];
-    string c[n-n/2];
+    char b[n/2];
+    char c[n-n/2];
     if (n % 2 == 0)
     {
         for (int i=0; i<n; i+=2)
@@ -26,7 +26,7 @@ int check (char a[])
             b[j] = a[i] * 2;
             c[k] = a[i+1];
         } */
-        
+
     }
     else
     {
