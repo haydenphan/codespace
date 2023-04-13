@@ -76,13 +76,17 @@ int calculate_pennies(int cents)
 {
     int count;
     cents = cents - 25 * calculate_quarters(cents) - 10 * calculate_dimes(cents) - 5 * calculate_nickels(cents);
-    if (cents == 1)
+    if (cents < 1)
     {
-        count = 1;
+        count = 0;
     }
     else
     {
-        count = 0;
+        do
+        {
+            cents--;
+            count++;
+        } while (cents >= 1);
     }
     return count;
 }
