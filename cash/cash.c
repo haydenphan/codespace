@@ -74,7 +74,7 @@ int calculate_nickels(int cents)
 // Calculate the number of pennies to give the customer
 int calculate_pennies(int cents)
 {
-    int count=0;
+    int count = 0;
     cents = cents - 25 * calculate_quarters(cents) - 10 * calculate_dimes(cents) - 5 * calculate_nickels(cents);
     if (cents < 1)
     {
@@ -94,7 +94,7 @@ int calculate_pennies(int cents)
 // Sum coins
 int calcute_total (int a, int b, int c, int d)
 {
-    return a+b+c+d;
+    return a + b + c + d;
 }
 
 int main(void)
