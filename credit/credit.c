@@ -15,12 +15,18 @@ int check (char a[])
             {
                 b[j] = a[i] * 2;
             }
+            for (int k=0; k<n-n/2; k++)
+            {
+                c[k] = a[i+1];
+            }
         }
+        /*
         for (int i=0, int j=0, int k=0; i<n, j<n/2, k<n-n/2; i+=2, j++, k++)
         {
             b[j] = a[i] * 2;
             c[k] = a[i+1];
-        }
+        } */
+        
     }
     else
     {
