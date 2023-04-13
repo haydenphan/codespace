@@ -12,11 +12,17 @@ int get_cents(void)
 
 int calculate_quarters(int cents)
 {
-    if (cents >= 25) {
-        while (cents >= 25)
+    if (cents < 25)
+    {
+        return 0;
+    }
+    else
+    {
+        int count = 0;
+        do
         {
             cents -= 25;
-        }
+        } while (cents >= 25);
     }
 }
 
