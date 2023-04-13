@@ -22,11 +22,16 @@ int calculate_quarters(int cents)
         do
         {
             cents -= 25;
+            count++;
         } while (cents >= 25);
+        return count;
     }
 }
 
-int calculate_dimes(int cents);
+int calculate_dimes(int cents)
+{
+    
+}
 int calculate_nickels(int cents);
 int calculate_pennies(int cents);
 
