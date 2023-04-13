@@ -58,22 +58,31 @@ int check (char a[])
 
 int amex (char a[])
 {
-    if (a[0] == '3' && a[1] == '4' || a[1] == '7')
-    {
-        if (check(a) == 1)
-        {
-            return 1;
-        }
-        else
-        {
-            return 0;
-        }
-    }
-    else
+    if (a[0] != '3')
     {
         return 0;
     }
+    else
+    {
+        if (a[1] != '4' && a[1] != '7')
+        {
+            return 0;
+        }
+        else
+        {
+            if (check(a) == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+     }
 }
+
+
 
 int mastercard (char a[])
 {
