@@ -92,7 +92,8 @@ int main(void)
     {
         printf ("Number: ");
         scanf ("%[0-9]", a);
-    } while (checkcheck (a) == 0);
+        int p = checkcheck (a);
+    } while (p == 0);
 
     int kq = check (a);
     if (kq == 1)
