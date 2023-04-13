@@ -13,68 +13,77 @@ int get_cents(void)
 
 int calculate_quarters(int cents)
 {
+    int count = 0;
     if (cents < 25)
     {
         return 0;
     }
     else
     {
-        int count = 0;
         do
         {
             cents -= 25;
             count++;
         } while (cents >= 25);
-        return count;
     }
+    printf ("%d\n", count);
+    return count;
 }
 
 int calculate_dimes(int cents)
 {
+    int count = 0;
     if (cents < 10)
     {
         return 0;
     }
     else
     {
-        int count = 0;
         do
         {
             cents -= 10;
             count++;
         } while (cents >= 10);
-        return count;
     }
+        printf ("%d\n", count);
+
+    return count;
 }
 
 int calculate_nickels(int cents)
 {
+    int count = 0;
     if (cents < 5)
     {
         return 0;
     }
     else
     {
-        int count = 0;
         do
         {
             cents -= 5;
             count++;
         } while (cents >= 5);
-        return count;
     }
+        printf ("%d\n", count);
+
+    return count;
 }
 
 int calculate_pennies(int cents)
 {
-    if (cents < 1)
-    {
-        return 0;
-    }
+    int count;
     if (cents == 1)
     {
-        return 1;
+        count = 1;
     }
+    else
+    {
+        count = 0;
+    }
+        printf ("%d\n", count);
+
+    return count;
 }
 
 int calcute_total (int a, int b, int c, int d)
