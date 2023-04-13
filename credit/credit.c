@@ -88,16 +88,17 @@ int checkcheck (char a[])
 int main(void)
 {
     char a[20];
+    int p;
     do
     {
         printf ("Number: ");
         scanf ("%[0-9]", a);
-        int p = checkcheck (a);
+        p = checkcheck (a);
         if (p != -1)
         {
             a[p] = 0;
         }
-    } while (p == 0);
+    } while (a[p] == 0);
 
     int kq = check (a);
     if (kq == 1)
