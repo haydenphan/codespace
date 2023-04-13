@@ -128,13 +128,13 @@ int checkcheck (char a[])
     int flag;
     for (int i=0; i < strlen (a); i++)
     {
-        if (a[i] <= '0' || a[i] >= '9')
+        if (a[i] < '0' || a[i] > '9')
         {
-            flag = i;
+            flag = 0;
             break;
         }
         else {
-            flag = -1;
+            flag = 1;
         }
     }
     return flag;
@@ -152,11 +152,7 @@ int main(void)
         scanf ("%s", a);
         p = checkcheck (a);
         printf ("%d", p);
-        if (p != -1)
-        {
-            a[p] = 0;
-        }
-    } while (a[p] != 0 || n < 13 || n > 16);
+    } while (p == 0 || n < 13 || n > 16);
 
     if (n == 15)
     {
