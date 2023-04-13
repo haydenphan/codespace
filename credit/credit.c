@@ -71,11 +71,10 @@ int check (char a[])
 int main(void)
 {
     char a[20];
-    do
-    {
+
         printf ("Number: ");
         scanf ("%[0-9]", a);
-    } while (a <= '0' || a >= '9');
+   
     int kq = check (a);
     if (kq == 1)
     {
