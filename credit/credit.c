@@ -68,12 +68,31 @@ int check (char a[])
     }
 }
 
+int checkcheck (char a[])
+{
+    int flag;
+    for (int i=0; i < strlen (a); i++)
+    {
+        if (a[i] <= '0' || a[i] >= '9')
+        {
+            flag = 0;
+            break;
+        }
+        else {
+            flag = 1;
+        }
+    }
+    return flag;
+}
+
 int main(void)
 {
     char a[20];
-
+    do
+    {
         printf ("Number: ");
         scanf ("%[0-9]", a);
+    } while (checkcheck (a) == 0);
 
     int kq = check (a);
     if (kq == 1)
