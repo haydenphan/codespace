@@ -70,6 +70,8 @@ int amex (char a[])
         }
         else
         {
+            return 1;
+            /*
             if (check(a) == 1)
             {
                 return 1;
@@ -77,7 +79,7 @@ int amex (char a[])
             else
             {
                 return 0;
-            }
+            } */
         }
      }
 }
