@@ -4,7 +4,13 @@
 
 int check (char a[])
 {
-    int n = strlen (a);
+    if (a[0] != '4')
+    {
+        return 0;
+    }
+    else
+    {
+        int n = strlen (a);
     char b[n/2];
     char c[n-n/2];
     if (n % 2 == 0)
@@ -20,12 +26,7 @@ int check (char a[])
                 c[k] = a[i+1];
             }
         }
-        /*
-        for (int i=0, int j=0, int k=0; i<n, j<n/2, k<n-n/2; i+=2, j++, k++)
-        {
-            b[j] = a[i] * 2;
-            c[k] = a[i+1];
-        } */
+  
 
     }
     else
@@ -66,6 +67,8 @@ int check (char a[])
     {
         return 0;
     }
+    }
+
 }
 
 int checkcheck (char a[])
