@@ -75,7 +75,10 @@ int amex (char a[])
     }
 }
 
-
+int mastercard (char a[])
+{
+    
+}
 
 // Check whether the inputted string is number character string or not
 int checkcheck (char a[])
