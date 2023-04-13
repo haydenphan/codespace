@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
+// Check whether the numbers are credit card or not
 int check (char a[])
 {
     if (a[0] != '4')
@@ -62,6 +63,7 @@ int check (char a[])
     }
 }
 
+// Check whether the inputted string is number character string or not
 int checkcheck (char a[])
 {
     int flag;
@@ -83,6 +85,8 @@ int main(void)
 {
     char a[16];
     int p;
+
+    // Prompt the users input numbers to check
     do
     {
         printf ("Number: ");
@@ -93,7 +97,7 @@ int main(void)
             a[p] = 0;
         }
     } while (a[p] == 0 || strlen(a) < 13 || strlen(a) > 16);
-printf ("%s\n", a);
+    
     int kq = check (a);
     if (kq == 1)
     {
