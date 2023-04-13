@@ -151,6 +151,7 @@ int main(void)
         printf ("Number: ");
         scanf ("%s", a);
         p = checkcheck (a);
+        printf ("%d", p);
         if (p != -1)
         {
             a[p] = 0;
