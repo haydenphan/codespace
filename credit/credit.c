@@ -75,11 +75,11 @@ int checkcheck (char a[])
     {
         if (a[i] <= '0' || a[i] >= '9')
         {
-            flag = 0;
+            flag = i;
             break;
         }
         else {
-            flag = 1;
+            flag = -1;
         }
     }
     return flag;
@@ -93,6 +93,10 @@ int main(void)
         printf ("Number: ");
         scanf ("%[0-9]", a);
         int p = checkcheck (a);
+        if (p != -1)
+        {
+            a[p] = 0;
+        }
     } while (p == 0);
 
     int kq = check (a);
