@@ -63,6 +63,11 @@ int check (char a[])
     }
 }
 
+int amex (char a[])
+{
+    if 
+}
+
 // Check whether the inputted string is number character string or not
 int checkcheck (char a[])
 {
@@ -97,7 +102,7 @@ int main(void)
             a[p] = 0;
         }
     } while (a[p] == 0 || strlen(a) < 13 || strlen(a) > 16);
-    
+
     int kq = check (a);
     if (kq == 1)
     {
