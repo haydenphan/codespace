@@ -77,7 +77,40 @@ int amex (char a[])
 
 int mastercard (char a[])
 {
-    
+    if (a[0] != '5' || a[1] < 1 || a[1] > 5)
+    {
+        return 0;
+    }
+    else
+    {
+        if (check(a) == 1)
+        {
+            return 1;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+}
+
+int visa (char a[])
+{
+    if (a[0] != '4')
+    {
+        return 0;
+    }
+    else
+    {
+        if (check(a) == 1)
+        {
+            return 1;
+        }
+        else
+        {
+            return 0;
+        }
+    }
 }
 
 // Check whether the inputted string is number character string or not
