@@ -5,7 +5,7 @@
 // Check whether the numbers are credit card or not
 int check (char a[])
 {
-int n = strlen (a);
+        int n = strlen (a);
         char b[n/2];
         char c[n-n/2];
         if (n % 2 == 0)
@@ -54,7 +54,6 @@ int n = strlen (a);
          {
             return 0;
          }
-    }
 }
 
 int amex (char a[])
@@ -65,7 +64,10 @@ int amex (char a[])
     }
     else
     {
-
+        if (check(a) == 1)
+        {
+            return 1;
+        }
     }
 }
 
