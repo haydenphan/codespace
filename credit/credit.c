@@ -74,15 +74,15 @@ int main(void)
 
         printf ("Number: ");
         scanf ("%[0-9]", a);
-   
+
     int kq = check (a);
     if (kq == 1)
     {
-        printf ("VALID");
+        printf ("VISA\n");
     }
     else
     {
-        printf ("VISA");
+        printf ("INVALID\n");
     }
     return 0;
 }
