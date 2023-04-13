@@ -5,13 +5,7 @@
 // Check whether the numbers are credit card or not
 int check (char a[])
 {
-    if (a[0] != '4')
-    {
-        return 0;
-    }
-    else
-    {
-        int n = strlen (a);
+int n = strlen (a);
         char b[n/2];
         char c[n-n/2];
         if (n % 2 == 0)
@@ -65,7 +59,14 @@ int check (char a[])
 
 int amex (char a[])
 {
-    if 
+    if (a[0] != '3' || a[1] != '4' && a[1] != '7')
+    {
+        return 0;
+    }
+    else
+    {
+
+    }
 }
 
 // Check whether the inputted string is number character string or not
