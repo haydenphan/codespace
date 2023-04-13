@@ -30,13 +30,60 @@ int calculate_quarters(int cents)
 
 int calculate_dimes(int cents)
 {
-    
+    if (cents < 10)
+    {
+        return 0;
+    }
+    else
+    {
+        int count = 0;
+        do
+        {
+            cents -= 10;
+            count++;
+        } while (cents >= 10);
+        return count;
+    }
 }
-int calculate_nickels(int cents);
-int calculate_pennies(int cents);
+
+int calculate_nickels(int cents)
+{
+    if (cents < 5)
+    {
+        return 0;
+    }
+    else
+    {
+        int count = 0;
+        do
+        {
+            cents -= 5;
+            count++;
+        } while (cents >= 5);
+        return count;
+    }
+}
+
+int calculate_pennies(int cents)
+{
+    if (cents < 1)
+    {
+        return 0;
+    }
+    if (cents == 1)
+    {
+        return 1;
+    }
+}
+
+int calcute_total (int a, int b, int c, int d)
+{
+    return a+b+c+d;
+}
 
 int main(void)
 {
+    /*
     // Ask how many cents the customer is owed
     int cents = get_cents();
 
@@ -91,4 +138,12 @@ int calculate_pennies(int cents)
 {
     // TODO
     return 0;
+    */
+   int cents = get_cents();
+   int a = calculate_quarters(cents);
+   int b = calculate_dimes(cents);
+   int c = calculate_nickels(cents);
+   int d = calculate_pennies(cents);
+   printf ("%d\n", calcute_total(a,b,c,d));
+   return 0;
 }
