@@ -88,12 +88,12 @@ int calculate_pennies(int cents)
 
     return count;
 }
-
+/*
 int calcute_total (int a, int b, int c, int d)
 {
     return a+b+c+d;
 }
-
+*/
 int main(void)
 {
     /*
@@ -157,6 +157,6 @@ int calculate_pennies(int cents)
    int b = calculate_dimes(cents);
    int c = calculate_nickels(cents);
    int d = calculate_pennies(cents);
-   printf ("%d\n", calcute_total(a,b,c,d));
+   printf ("%d\n", a+b+c+d);
    return 0;
 }
