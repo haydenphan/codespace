@@ -49,6 +49,6 @@ int count_sentences (string s)
 int main(void)
 {
     string s = get_string ("Text: ");
-    printf ("%d letters", count_letters(s));
+    printf ("%d letters\n", count_letters(s));
     return 0;
 }
