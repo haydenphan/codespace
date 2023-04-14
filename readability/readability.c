@@ -60,7 +60,7 @@ int main(void)
     double grade = test (s);
     if (grade - (int)grade >= 0.5)
     {
-        grade ++;
+        grade = (int)grade + 1.0;
     }
     else
     {
@@ -69,6 +69,10 @@ int main(void)
     if (grade < 16.0)
     {
         printf ("Grade %.0lf\n", grade);
+    }
+    else if (grade < 1.0)
+    {
+        printf ("Before Grade 1");
     }
     else
     {
