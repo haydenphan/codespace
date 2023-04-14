@@ -46,6 +46,11 @@ int count_sentences (string s)
     return count;
 }
 
+int test (string s)
+{
+    int L = 
+}
+
 int main(void)
 {
     string s = get_string ("Text: ");
