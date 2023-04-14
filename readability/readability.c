@@ -48,7 +48,10 @@ int count_sentences (string s)
 
 int test (string s)
 {
-    int L = 
+    double L = count_letters(s) / count_words(s) * 100;
+    double S = count_sentences(s) / count_words(s) * 100;
+    int index = (int) 0.0588 * L - 0.296 * S - 15.8;
+    return index;
 }
 
 int main(void)
@@ -57,5 +60,6 @@ int main(void)
     printf ("%d letters\n", count_letters(s));
     printf ("%d words\n", count_words(s));
     printf ("%d sentences\n", count_sentences(s));
+    printf ("%d\n", test(s));
     return 0;
 }
