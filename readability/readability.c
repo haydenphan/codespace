@@ -50,5 +50,7 @@ int main(void)
 {
     string s = get_string ("Text: ");
     printf ("%d letters\n", count_letters(s));
+    printf ("%d words\n", count_words(s));
+    printf ("%d sentences\n", count_sentences(s));
     return 0;
 }
