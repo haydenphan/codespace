@@ -48,8 +48,9 @@ int count_sentences (string s)
 
 int test (string s)
 {
-    double L = count_letters(s) / count_words(s) * 100;
-    double S = count_sentences(s) / count_words(s) * 100;
+    double L = (double) (count_letters(s)) / (double) (count_words(s)) * 100.0;
+    double S = (double) (count_sentences(s)) / (double) (count_words(s)) * 100.0;
+    printf ("%lf\n%lf\n", L, S);
     int index = (int) (0.0588 * L - 0.296 * S - 15.8);
     return index;
 }
