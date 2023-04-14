@@ -68,11 +68,11 @@ int main(void)
     }
     if (grade < 16.0)
     {
-        printf ("Grade %.0lf", grade);
+        printf ("Grade %.0lf\n", grade);
     }
     else
     {
-        printf ("Grade 16+");
+        printf ("Grade 16+\n");
     }
     return 0;
 }
