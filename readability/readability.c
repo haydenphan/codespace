@@ -46,21 +46,33 @@ int count_sentences (string s)
     return count;
 }
 
-int test (string s)
+double test (string s)
 {
     double L = (double) (count_letters(s)) / (double) (count_words(s)) * 100.0;
     double S = (double) (count_sentences(s)) / (double) (count_words(s)) * 100.0;
-    printf ("%lf\n%lf\n", L, S);
-    int index = (int) (0.0588 * L - 0.296 * S - 15.8);
+    double index = 0.0588 * L - 0.296 * S - 15.8;
     return index;
 }
 
 int main(void)
 {
     string s = get_string ("Text: ");
-    printf ("%d letters\n", count_letters(s));
-    printf ("%d words\n", count_words(s));
-    printf ("%d sentences\n", count_sentences(s));
-    printf ("%d\n", test(s));
+    double grade = test (s);
+    if (grade - (int)grade >= 0.5)
+    {
+        grade ++;
+    }
+    else
+    {
+        grade = (int)grade;
+    }
+    if (grade < 16.0)
+    {
+        printf ("Grade %.0lf", grade);
+    }
+    else
+    {
+        printf ("Grade 16+");
+    }
     return 0;
 }
