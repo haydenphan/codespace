@@ -50,7 +50,7 @@ int test (string s)
 {
     double L = count_letters(s) / count_words(s) * 100;
     double S = count_sentences(s) / count_words(s) * 100;
-    int index = (int) 0.0588 * L - 0.296 * S - 15.8;
+    int index = (int) (0.0588 * L - 0.296 * S - 15.8);
     return index;
 }
 
