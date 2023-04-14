@@ -66,13 +66,13 @@ int main(void)
     {
         grade = (int)grade;
     }
-    if (grade < 16.0)
+    if (grade > 1 && grade < 16.0)
     {
         printf ("Grade %.0lf\n", grade);
     }
     else if (grade < 1.0)
     {
-        printf ("Before Grade 1");
+        printf ("Before Grade 1\n");
     }
     else
     {
