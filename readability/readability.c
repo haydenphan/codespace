@@ -30,7 +30,7 @@ int count_words (string s)
             count++;
         }
     }
-    return count;
+    return count+1;
 }
 
 int count_sentences (string s)
