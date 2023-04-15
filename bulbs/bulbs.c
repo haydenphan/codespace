@@ -4,6 +4,8 @@
 
 const int BITS_IN_BYTE = 8;
 
+int convert
+
 void print_bulb(int bit);
 
 int main(void)
