@@ -4,7 +4,10 @@
 
 const int BITS_IN_BYTE = 8;
 
-int convert
+int convert (int a)
+{
+    
+}
 
 void print_bulb(int bit);
 
