@@ -9,13 +9,6 @@ int convert (int n)
     int a[8];
 }
 
-void print_bulb(int bit);
-
-int main(void)
-{
-    // TODO
-}
-
 void print_bulb(int bit)
 {
     if (bit == 0)
@@ -29,3 +22,10 @@ void print_bulb(int bit)
         printf("\U0001F7E1");
     }
 }
+
+int main(void)
+{
+    // TODO
+}
+
+
