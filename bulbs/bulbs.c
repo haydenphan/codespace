@@ -4,9 +4,24 @@
 
 const int BITS_IN_BYTE = 8;
 
-int convert (int n)
+int convert (char a)
 {
-    int a[8];
+    int n = (int) a;
+    int a[9];
+    b[8] = NULL;
+    for (int i = 7; i >= 0; i--)
+    {
+        if (n % 2 == 0)
+        {
+            b[i] = 0;
+        }
+        else
+        {
+            b[i] = 1;
+        }
+        n /= 2;
+    }
+    return b;
 }
 
 void print_bulb(int bit)
@@ -25,7 +40,7 @@ void print_bulb(int bit)
 
 int main(void)
 {
-    // TODO
+    
 }
 
 
