@@ -7,7 +7,7 @@ const int BITS_IN_BYTE = 8;
 int convert (char a)
 {
     int n = (int) a;
-    int b[8];
+    int b[BITS_IN_BYTE];
     for (int i = 7; i >= 0; i--)
     {
         if (n % 2 == 0)
