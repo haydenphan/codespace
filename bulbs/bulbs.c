@@ -4,9 +4,9 @@
 
 const int BITS_IN_BYTE = 8;
 
-int convert (int a)
+int convert (int n)
 {
-    
+    int a[8];
 }
 
 void print_bulb(int bit);
