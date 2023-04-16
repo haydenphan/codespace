@@ -40,7 +40,7 @@ void print_bulb(int bit)
 
 int main(void)
 {
-    
+    char a = 'a';
 }
 
 
